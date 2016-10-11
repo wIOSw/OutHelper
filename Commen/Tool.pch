@@ -1,0 +1,30 @@
+//
+//  Tool.pch
+//  LWZhangChu
+//
+//  Created by qianfeng on 16/10/11.
+//  Copyright © 2016年 LiuWei. All rights reserved.
+//
+
+#ifndef Tool_pch
+#define Tool_pch
+
+#import "BaseRequest.h"  //在整个工程中的任意位置可以不用包含任何头文件，直接使用
+#import "MJRefresh.h"
+#import "UIImageView+WebCache.h"
+#import "UIButton+WebCache.h"
+#import "HDManager.h" //加载指示器
+
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+//宏定义 我们在工程中使用TEXT_GRAYCOLOR，而编译时，系统会将所有的TEXT_GRAYCOLOR 替换 为后边
+#define TEXT_GRAYCOLOR [UIColor colorWithRed:0.6 green:0.6 blue:0.6 alpha:1]
+
+#define HOME_URL @"http://files.2bulu.com"
+
+#define SCREEN_W [UIScreen mainScreen].bounds.size.width
+#define SCREEN_H [UIScreen mainScreen].bounds.size.height
+
+#endif /* Tool_pch */
